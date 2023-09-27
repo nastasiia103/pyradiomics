@@ -283,8 +283,8 @@ testCases = ('brain1', 'brain2', 'breast1', 'lung1', 'lung2', 'test_wavelet_64x6
 cMatrices = None  # set cMatrices to None to prevent an import error in the feature classes.
 cShape = None
 try:
-  from radiomics import _cmatrices as cMatrices  # noqa: F401
-  from radiomics import _cshape as cShape  # noqa: F401
+  from radiomics.src import _cmatrices as cMatrices  # noqa: F401
+  from radiomics.src import _cshape as cShape  # noqa: F401
 except ImportError as e:
   if os.path.isdir(os.path.join(os.path.dirname(__file__), '..', 'data')):
     # It looks like PyRadiomics is run from source (in which case "setup.py develop" must have been run)
