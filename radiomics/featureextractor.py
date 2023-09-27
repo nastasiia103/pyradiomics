@@ -12,7 +12,8 @@ import pykwalify.core
 import SimpleITK as sitk
 import six
 
-from radiomics import generalinfo, getFeatureClasses, getImageTypes, getParameterValidationFiles, imageoperations
+from radiomics import generalinfo, imageoperations
+from radiomics import __init__ 
 
 
 logger = logging.getLogger(__name__)
